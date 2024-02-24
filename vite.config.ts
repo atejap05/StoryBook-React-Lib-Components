@@ -12,9 +12,9 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "./src/components/index.tsx"),
-      name: "SimpleUI",
-      fileName: "simple-ui",
+      entry: path.resolve(__dirname, "./src/components/index.ts"),
+      name: "SimpleReactUI",
+      fileName: "simple-react-ui",
     },
     rollupOptions: {
       external: ["react", "react-dom"],

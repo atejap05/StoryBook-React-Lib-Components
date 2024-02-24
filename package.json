@@ -1,8 +1,19 @@
 {
-  "name": "storybook-react",
+  "name": "simple-react-ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/simple-react-ui-umd.cjs",
+  "module": "dist/simple-react-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-react-ui.js",
+      "require": "./dist/simple-react-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
